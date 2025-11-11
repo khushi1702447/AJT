@@ -1,0 +1,87 @@
+<%-- 
+    Document   : index
+    Created on : 30 Oct 2025, 7:31:26 pm
+    Author     : KHUSHI
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management System</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: #ffffff;
+            width: 450px;
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        h1 {
+            color: #2a2a72;
+            font-size: 24px;
+            margin-bottom: 25px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 30px;
+            margin: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: linear-gradient(90deg, #764ba2, #667eea);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            margin-top: 25px;
+            font-size: 13px;
+            color: #777;
+        }
+
+        footer span {
+            color: #333;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Attendance Management System</h1>
+        <a href="markAttendance.jsp" class="btn">Mark Attendance</a>
+        <a href="viewAttendance.jsp" class="btn">View Attendance</a>
+        <a href="addStudent.jsp"> Add Student</a>
+        <footer>Marwadi University</footer>
+    </div>
+</body>
+</html>
